@@ -1,5 +1,6 @@
 import Head from "next/head";
 import fetch from "node-fetch";
+import AdBanner from "../components/ads"
 
 function Home({ BrData, CovidData, DolarData, NewData }) {
   return (
@@ -7,7 +8,7 @@ function Home({ BrData, CovidData, DolarData, NewData }) {
       <Head>
         <title>Brasil Covid-19</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+        </Head>
       <div className="container">
         <header>
           <h1 className="title">Brasil Covid-19</h1>
@@ -63,6 +64,7 @@ function Home({ BrData, CovidData, DolarData, NewData }) {
             </div>
           </div>
         </div>
+        <AdBanner/>
         <p id="description">Veja agora quantos casos de covid-19 (Coronavirus) tem no Brasil tem tempo real, atualizado todos dias, veja também o valor do dolar-real em tempo real, taxa de mortalidade do coronavirus no mundo e Brasil.</p>
       </div>
       <footer>
